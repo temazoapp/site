@@ -2,8 +2,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background: #fff;
-    color: #111;
+    background: #000;
+    color: #eee;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,17 +21,18 @@ body {
     font-size: 1.3rem;
     font-weight: bold;
     letter-spacing: -1px;
+    color: #eee;
 }
 .main-nav a {
     margin-left: 32px;
     text-decoration: none;
-    color: #111;
+    color: #eee;
     font-size: 1.1rem;
     font-weight: 400;
     transition: color 0.2s;
 }
 .main-nav a:hover {
-    color: #0077cc;
+    color: #ff8c42;
 }
 
 .center-content {
@@ -86,14 +87,14 @@ body {
     width: auto;
     border-radius: 16px;
     box-sizing: border-box;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 12px rgba(255,255,255,0.08);
     transition: box-shadow 0.2s;
-    background: #fff;
+    background: #1a1a1a;
     object-fit: contain;
 }
 .app-store-link:hover .app-store-badge,
 .google-play-link:hover .google-play-badge {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 20px rgba(255,140,66,0.25);
 }
 .social-icons {
     margin-top: 16px;
@@ -117,35 +118,59 @@ body {
     padding: 0;
 }
 .social-icons a:hover .icon {
-    filter: brightness(0.5);
+    filter: brightness(1.2);
 }
 .main-footer {
     width: 100%;
-    background: #fafafa;
+    background: #0a0a0a;
     padding: 24px 0 16px 0;
     text-align: center;
     font-size: 1rem;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #222;
     margin-top: auto;
+    color: #aaa;
 }
 .main-footer a {
-    color: #111;
+    color: #eee;
     text-decoration: none;
     margin: 0 16px;
     transition: color 0.2s;
 }
 .main-footer a:hover {
-    color: #0077cc;
+    color: #ff8c42;
+}
+.footer-operator {
+    margin-top: 12px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #888;
 }
 .content-page {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
     flex: 1;
+    color: #eee;
 }
 
-.content-page h1 {
+.content-page h1,
+.content-page h2,
+.content-page h3 {
     margin-bottom: 20px;
+    color: #fff;
+}
+
+.content-page p,
+.content-page li {
+    color: #ccc;
+}
+
+.content-page a {
+    color: #ff8c42;
+}
+
+.content-page a:hover {
+    color: #ffa366;
 }
 
 .logo-link {
