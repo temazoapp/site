@@ -89,8 +89,14 @@ body {
     box-sizing: border-box;
     box-shadow: 0 2px 12px rgba(255,255,255,0.08);
     transition: box-shadow 0.2s;
-    background: #1a1a1a;
     object-fit: contain;
+}
+.app-store-badge {
+    /* White App Store badge: no dark background so logo stays visible */
+    background: transparent;
+}
+.google-play-badge {
+    background: #1a1a1a;
 }
 .app-store-link:hover .app-store-badge,
 .google-play-link:hover .google-play-badge {
