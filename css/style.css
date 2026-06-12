@@ -23,6 +23,12 @@ body {
     letter-spacing: -1px;
     color: #eee;
 }
+.logo-img {
+    height: 36px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
 .main-nav a {
     margin-left: 32px;
     text-decoration: none;
@@ -49,12 +55,10 @@ body {
 }
 
 .app-logo {
-    width: 120px;
+    width: 220px;
     height: auto;
-    max-width: 120px;
+    max-width: min(280px, 70vw);
     object-fit: contain;
-    border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .main-title {
@@ -207,8 +211,8 @@ body {
     }
     
     .app-logo {
-        width: 80px;
-        max-width: 80px;
+        width: 180px;
+        max-width: 70vw;
     }
     
     .app-badges-container {
@@ -278,6 +282,10 @@ body {
     
     .main-nav a {
         font-size: 0.9rem;
+    }
+    
+    .logo-img {
+        height: 30px;
     }
     
     .logo {
