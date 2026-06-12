@@ -50,12 +50,17 @@ body {
     text-align: center;
 }
 
-.main-title {
-    font-size: 6vw;
-    font-weight: bold;
-    margin: 0 0 16px 0;
-    letter-spacing: -2px;
+.app-logo-container {
+    margin-bottom: 24px;
 }
+
+.app-logo {
+    width: 220px;
+    height: auto;
+    max-width: min(280px, 70vw);
+    object-fit: contain;
+}
+
 .subtitle {
     font-size: 1.1rem;
     margin-bottom: 32px;
@@ -195,8 +200,9 @@ body {
         font-size: 1rem;
     }
     
-    .main-title {
-        font-size: 2.5rem;
+    .app-logo {
+        width: 180px;
+        max-width: 70vw;
     }
     
     .app-badges-container {
@@ -250,10 +256,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    .main-title {
-        font-size: 2rem;
-    }
-    
     .app-badges-container {
         gap: 8px;
     }
