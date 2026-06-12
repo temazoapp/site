@@ -1,5 +1,5 @@
 name: Website Health Check
-description: Monitor usalabia.com health and send Discord alerts on failures
+description: Monitor usarevela2app.com health and send Discord alerts on failures
 
 on:
   schedule:
@@ -30,7 +30,7 @@ jobs:
           node -e "
           const axios = require('axios');
           
-          const WEBSITE_URL = 'https://usalabia.com';
+          const WEBSITE_URL = 'https://usarevela2app.com';
           const MAX_RETRIES = 3;
           const RETRY_DELAY = 5000; // 5 seconds
           
@@ -95,7 +95,7 @@ jobs:
           status: ${{ job.status }}
           title: "🚨 Website Health Check Failed"
           description: |
-            **Website:** https://usalabia.com
+            **Website:** https://usarevela2app.com
             **Status Code:** ${{ steps.health-check.outputs.status_code }}
             **Error:** ${{ steps.health-check.outputs.error_message }}
             **Time:** ${{ github.event.schedule || 'Manual trigger' }}
@@ -113,7 +113,7 @@ jobs:
           status: ${{ job.status }}
           title: "✅ Website Health Check Passed"
           description: |
-            **Website:** https://usalabia.com
+            **Website:** https://usarevela2app.com
             **Status:** Healthy (200 OK)
             **Time:** ${{ github.event.schedule || 'Manual trigger' }}
             

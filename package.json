@@ -1,7 +1,7 @@
 {
   "name": "labia-website",
   "version": "1.0.0",
-  "description": "RevelaDos website",
+  "description": "Revela2 website",
   "scripts": {
     "test": "echo \"No tests specified\" && exit 0"
   },
